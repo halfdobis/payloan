@@ -3,6 +3,7 @@ import "./home.css";
 function Home() {
   return (
     <div className="container-fluid">
+      {/* <img src="./img/logo.png" alt="logo" /> */}
       <header>
         <h1 className="header">WELCOME TO PAYLOAN</h1>
       </header>
@@ -25,7 +26,7 @@ function Home() {
               </span>
             </p>
 
-            <hr />
+            <hr style={{ borderTop: "3px dotted green" }} />
 
             <h1 className="sub-heading">SME.</h1>
             <p>You can now apply for our SME loans online.</p>
