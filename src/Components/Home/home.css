@@ -1,0 +1,68 @@
+.header {
+    padding: 50px;
+    font-weight: bolder;
+    color: orangered;
+}
+
+.row img {
+    width: 90%;
+    padding: 10px;
+}
+
+.heading {
+    font-weight: bold;
+    color: green;
+}
+
+.span {
+    color: red;
+}
+
+.sub-heading {
+    font-weight: bold;
+    color: orangered;
+}
+
+.sub-span {
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    font-weight: 400px;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 4px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    color: white;
+    background-color: green;
+    border-color: green;
+}
+
+.sub-button {
+    display: inline-block;
+    font-weight: 400px;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 4px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    color: white;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+
+
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
