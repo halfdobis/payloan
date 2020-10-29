@@ -1,6 +1,11 @@
+import { useState } from "react";
+import InputModal from "../inputModal";
+import { Button } from "react-bootstrap";
 import "./home.css";
 
 function Home() {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <div className="container-fluid">
       {/* <img src="./img/logo.png" alt="logo" /> */}
@@ -38,12 +43,20 @@ function Home() {
 
             <br />
 
-            <button type="button" className="button">
+            <Button type="button" variant="success">
               HOW TO APPLY
-            </button>
-            <button type="button" className="sub-button ml-5">
+            </Button>
+
+            <Button
+              type="button"
+              variant="primary"
+              className="ml-5 btnn"
+              onClick={() => setModalShow(true)}
+            >
               APPLY NOW
-            </button>
+            </Button>
+
+            <InputModal show={modalShow} onHide={() => setModalShow(false)} />
           </article>
         </div>
       </section>
