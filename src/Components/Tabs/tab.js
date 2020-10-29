@@ -11,7 +11,7 @@ function Tab() {
       activeKey={key}
       onSelect={(k) => setKey(k)}
     >
-      <Tab eventKey="home" title="Home">
+      <Tab eventKey="home" title="Loan Amount">
         <div className="container-fluid">
           <header>
             <h3>Hello, how much do you want?</h3>
@@ -88,10 +88,10 @@ function Tab() {
           </Button>
         </div>
       </Tab>
-      <Tab eventKey="profile" title="Profile" disable>
+      <Tab eventKey="Account" title="Account" disabled>
         <h1>Profile</h1>
       </Tab>
-      <Tab eventKey="contact" title="Contact" disable>
+      <Tab eventKey="Something" title="Something" disabled>
         <h1>Contact</h1>
       </Tab>
     </Tabs>
