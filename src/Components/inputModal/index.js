@@ -19,7 +19,7 @@ function InputModal(props) {
       <Modal.Body>
         <Form>
           <Form.Group>
-            <Form.Control type="text" placeholder="Your Name" />
+            <Form.Control type="text" placeholder="Your Name" id="yourName" />
           </Form.Group>
         </Form>
 

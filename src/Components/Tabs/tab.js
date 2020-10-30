@@ -12,7 +12,7 @@ function Tab() {
       onSelect={(k) => setKey(k)}
     >
       <Tab eventKey="home" title="Loan Amount">
-        <div className="container-fluid">
+        <div className="container">
           <header>
             <h3>Hello, how much do you want?</h3>
           </header>

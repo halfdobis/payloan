@@ -14,7 +14,6 @@ function FormModal(props) {
           <Tab />
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body></Modal.Body>
     </Modal>
   );
 }
