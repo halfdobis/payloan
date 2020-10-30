@@ -56,7 +56,11 @@ function Home() {
               APPLY NOW
             </Button>
 
-            <InputModal show={modalShow} onHide={() => setModalShow(false)} />
+            <InputModal
+              show={modalShow}
+              onHide={() => setModalShow(false)}
+              setModal={setModalShow}
+            />
           </article>
         </div>
       </section>

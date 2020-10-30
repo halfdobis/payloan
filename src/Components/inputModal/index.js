@@ -4,7 +4,19 @@ import FormModal from "../formModal";
 
 function InputModal(props) {
   const [modalShow, setModalShow] = useState(false);
-  return (
+  const [myName, setMyName] = useState("");
+
+  return modalShow ? (
+    <FormModal
+      show={modalShow}
+      onHide={() => {
+        setModalShow(false);
+        setMyName("");
+        props.setModal(false);
+      }}
+      name={myName}
+    />
+  ) : (
     <Modal
       {...props}
       size="md"
@@ -17,13 +29,20 @@ function InputModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Form>
+        <Form
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+        >
           <Form.Group>
-            <Form.Control type="text" placeholder="Your Name" id="yourName" />
+            <Form.Control
+              type="text"
+              placeholder="Your Name"
+              id="myName"
+              onChange={(e) => setMyName(e.target.value)}
+            />
           </Form.Group>
         </Form>
-
-        <FormModal show={modalShow} onHide={() => setModalShow(false)} />
       </Modal.Body>
       <Modal.Footer>
         <p className="foot">
@@ -32,7 +51,11 @@ function InputModal(props) {
         <Button
           type="button"
           variant="success"
-          onClick={() => setModalShow(true)}
+          onClick={() => {
+            if (myName !== "") {
+              setModalShow(true);
+            }
+          }}
         >
           Proceed
         </Button>
