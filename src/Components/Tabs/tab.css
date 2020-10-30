@@ -1,5 +1,19 @@
 .container h3 {
     padding: 10px;
+    color: orangered;
+}
+
+.head {
+    font-weight: bold;
+}
+
+.schedule {
+    color: green;
+}
+
+.help {
+    font-weight: bold;
+    color: green;
 }
 
 .illustration {

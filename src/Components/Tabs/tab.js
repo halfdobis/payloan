@@ -21,10 +21,10 @@ function Tab() {
             <div className="col-md-6">
               <Card>
                 <Card.Body>
-                  <h6>Heads up!</h6>
+                  <h6 className="head">Heads up!</h6>
                   <h6>
                     We can trust you with up to ten million naira. But we
-                    recommend you start with what you can pay
+                    recommend you start with what you can pay.
                   </h6>
                 </Card.Body>
               </Card>
@@ -65,15 +65,16 @@ function Tab() {
                   </Form.Row>
                 </Form.Group>
               </Form>
-              <h4>PROPOSED SCHEDULE:</h4>
+              <h4 className="schedule">PROPOSED SCHEDULE:</h4>
             </div>
 
             <div className="col-md-6">
-              <h6>Need help?</h6>
+              <h6 className="help">Need help?</h6>
               <h6>
                 We will more than happy to assist you in filling this form.
                 Please contact one of our SME manager
               </h6>
+
               <h6>08022233344, 08111222333</h6>
 
               <img
