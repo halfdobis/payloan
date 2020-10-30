@@ -1,19 +1,23 @@
 .container h3 {
     padding: 10px;
     color: orangered;
+    font-family: "Oxygen";
 }
 
 .head {
     font-weight: bold;
+    font-family: "Arvo";
 }
 
 .schedule {
     color: green;
+    font-family: "Anton";
 }
 
 .help {
     font-weight: bold;
     color: green;
+    font-family: "Arvo";
 }
 
 .illustration {

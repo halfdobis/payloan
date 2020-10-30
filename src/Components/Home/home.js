@@ -22,7 +22,7 @@ function Home() {
           <article>
             <h1 className="heading">IN NEED OF CAPITAL?</h1>
 
-            <p>
+            <p style={{ fontFamily: "Arvo" }}>
               PAYLOAN is a trusted partner to grow and expand your business.
               Over{" "}
               <span className="span">
@@ -34,8 +34,10 @@ function Home() {
             <hr style={{ borderTop: "3px dotted green" }} />
 
             <h1 className="sub-heading">SME.</h1>
-            <p>You can now apply for our SME loans online.</p>
-            <p>
+            <p style={{ fontFamily: "Arvo" }}>
+              You can now apply for our SME loans online.
+            </p>
+            <p style={{ fontFamily: "Arvo" }}>
               You can access up to{" "}
               <span className="sub-span">&#8358;10,000,000</span> credit
               facility with extendable duration of 12 months.
@@ -43,7 +45,11 @@ function Home() {
 
             <br />
 
-            <Button type="button" variant="success">
+            <Button
+              type="button"
+              variant="success"
+              style={{ fontWeight: "bold" }}
+            >
               HOW TO APPLY
             </Button>
 
@@ -51,6 +57,7 @@ function Home() {
               type="button"
               variant="primary"
               className="ml-5 btnn"
+              style={{ fontWeight: "bold" }}
               onClick={() => setModalShow(true)}
             >
               APPLY NOW

@@ -6,6 +6,7 @@
     padding: 50px;
     font-weight: bolder;
     color: orangered;
+    font-family: "Arvo";
 }
 
 .row img {
@@ -16,6 +17,7 @@
 .heading {
     font-weight: bold;
     color: green;
+    font-family: "Arial";
 }
 
 .span {
@@ -25,6 +27,7 @@
 .sub-heading {
     font-weight: bold;
     color: orangered;
+    font-family: "Oxygen";
 }
 
 .sub-span {
@@ -52,6 +55,7 @@
 .foot {
     font-size: 14px;
     font-weight: bold;
+    font-family: "Oxygen";
 }
 
 

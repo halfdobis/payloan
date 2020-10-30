@@ -89,12 +89,14 @@ function Tab({ name }) {
 
               <div className="col-md-6">
                 <h6 className="help">Need help?</h6>
-                <h6>
+                <h6 style={{ fontFamily: "Arvo" }}>
                   We will more than happy to assist you in filling this form.
                   Please contact one of our SME manager
                 </h6>
 
-                <h6>08022233344, 08111222333</h6>
+                <h6 style={{ fontFamily: "Oxygen" }}>
+                  08022233344, 08111222333
+                </h6>
 
                 <img
                   src="./img/illustration-2.svg"
