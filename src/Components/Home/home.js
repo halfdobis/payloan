@@ -10,9 +10,7 @@ function Home() {
     <div className="container-fluid">
       {/* <img src="./img/logo.png" alt="logo" /> */}
       <header>
-        <h1 className="header">
-          <span>WELCOME TO PAYLOAN</span>
-        </h1>
+        <h1 className="header">WELCOME TO PAYLOAN</h1>
       </header>
 
       <section className="row">
@@ -58,7 +56,7 @@ function Home() {
             <Button
               type="button"
               variant="primary"
-              className="ml-5 btnn"
+              className="ml-4 btnn"
               style={{ fontWeight: "bold" }}
               onClick={() => setModalShow(true)}
             >
