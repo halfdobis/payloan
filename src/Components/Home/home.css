@@ -9,16 +9,63 @@
     font-family: "Arvo";
 }
 
+.header span {
+     display: block;
+     margin: 11px 0 17px 0;
+     line-height: 80px;
+     text-shadow: 0 13.36px 8.896px #c4b59d,
+     0 -2px 1px #fff;
+     letter-spacing: 4px;
+}
+
 .row img {
     width: 90%;
     padding: 10px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+	box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
+	animation: morphing 10s infinite;
+	overflow: hidden;
 }
+
+	@keyframes morphing {
+		0% {
+			border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+			box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
+		}
+		25% { 
+			border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+		}
+		50% {
+			border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+			box-shadow: -10px -5px 50px rgba(0,0,0,0.2);
+		}
+		75% {
+			border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;		
+		}
+	}
 
 .heading {
     font-weight: bold;
     color: green;
     font-family: "Arial";
+    padding-bottom: 10px;
+    transform: scale(0.9);
+    display: inline-block;
+    animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
 }
+
+
+     @keyframes bop {
+         0% {
+             transform: scale(0.9);
+         }
+
+         50%,
+         100% {
+             transform: scale(1);
+         }
+     }
+
 
 .span {
     color: red;
