@@ -15,7 +15,11 @@ function Home() {
 
       <section className="row">
         <div className="col-md-6">
-          <img src="./img/illustration-1.svg" alt="illustration" />
+          <img
+            src="./img/illustration-1.svg"
+            alt="illustration"
+            className="img"
+          />
         </div>
 
         <div className="col-md-6">
